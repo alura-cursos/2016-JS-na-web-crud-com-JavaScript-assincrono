@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doguito Petshop | Atualizar cliente</title>
+    <title>Doguito Petshop | Cadastro de cliente</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../assets/css/base/base.css">
@@ -27,23 +27,26 @@
     </header>
     <main class="container flex flex--centro flex--coluna">
         <section class="cartao cadastro">
-            <h1 class="cartao__titulo">Edição</h1>
-            <form action="#" class="flex flex--coluna" data-form>
+            <h1 class="cartao__titulo">Novo Cliente</h1>
+            <form class="flex flex--coluna" data-form>
                 <div class="input-container">
                     <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required data-nome>
                     <label class="input-label" for="nome">Nome</label>
-                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
                 </div>
                 <div class="input-container">
                     <input name="email" id="email" class="input" type="text" placeholder="email" required data-email>
-                    <label class="input-label" for="email">email</label>
-                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                    <label class="input-label" for="email" >email</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
                 </div>
                 <button type="submit"class="botao">
-                    Editar cliente
-                </button>
+                Cadastrar
+            </button>
             </form>
         </section>
     </main>
+    <script type="module" src="../controller/cadastraClientes-controller.js"></script>
 </body>
+
+
 </html>
